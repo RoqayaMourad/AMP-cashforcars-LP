@@ -117,9 +117,9 @@
 			}
 
 			h1 {
-				font-size:3.5em;
+				font-size:2.5em;
 				line-height: 120%;
-				margin-bottom:0.8em;
+				margin-bottom:0.6em;
 				text-decoration: underline;
 				text-decoration-color: #fc7500
 			}
@@ -221,8 +221,7 @@
 			}
 
 			header {
-				width: 100%;
-				min-height: 80px
+			
 			}
 
 			#logo {
@@ -238,6 +237,10 @@
 			#logo amp-img {
 				max-width: 100%
 			}
+			.img-logo a {
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
 
 			#nav {
 				background-image: url('img/stack-coins-calculator-toy-car-pen-template4.jpg');
@@ -245,32 +248,44 @@
 				background-repeat: no-repeat;
 				background-attachment:fixed;
 				background-size:cover;
-				padding-bottom:4.5rem;
+				padding-bottom:8.5rem;
 				/* background-color: #fff */
 			}
+			#nav-content{
+				margin-left: 9rem;
+				width:30%;
+			}
 #nav-content p {
-	font-size: 1.3em;
+	font-size:1.2em;
 	line-height: 1.5;
 }
 			#nav header {
-				padding: 0 0;
-				width: 80%;
-				margin: auto
+				padding:0rem 1rem;
+				width: 100%;
+				margin: auto;
+				border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: #fc7500;
+				min-height: 80px;
+				background-color: #000;
 			}
 
-			.tel {
-				padding-top: 20px
-			}
+		
 
 			.click-to-call {
-				color: #fc7500;
-				font-size: 2rem;
-				padding: 0.6rem;
-				padding-top: 1.25rem;
-				background-color: #fff;
-				box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-				border-radius: 5px;
+				font-family: "Open Sans", Sans-serif;
+    font-size: 1.3em;
+    font-weight: 800;
+    border-radius: 0px 0px 0px 0px;
+    padding: 25px 25px 25px 25px;
+				color: #fff;
+				text-decoration: none;
 
+
+				background-color: #fc7500;
+			}
+			.click-to-call:hover{
+				color: #fff;
 			}
 
 			#nav-wrapper {
@@ -280,7 +295,7 @@
 			}
 
 			#nav-content {
-				width: 56%;
+				width: 40%;
 				color:#fff
 			}
 
@@ -306,11 +321,12 @@
 			}
 
 			#lead-collection-form {
-				width: 40%;
+				width: 30%;
 				padding: 2em 1.5em;
-				background: #fff;
 				position: absolute;
-				right: 0
+				right:15%;
+				background-color: #000;
+				color: #fff;
 			}
 
 			input {
@@ -391,7 +407,7 @@
 
 			#support {
 				color: #fff;
-				background: #2c3e50
+			    background-image: linear-gradient(130deg, #333333 0%, #000000 100%);
 			}
 
 			#support a {
@@ -439,12 +455,38 @@
 			.call-mobile {
 				background-color: #fc7500;
 				padding:1rem 0rem;	
-					display: none;	
+				display: none;	
 			}
 			.call-mobile a {
 				font-size: 2rem;
 				color: #fff;
 		
+			}
+			footer{
+					 background-image: linear-gradient(130deg, #333333 0%, #000000 100%);
+					color:#fff
+					 }
+					 footer  a {
+						 color: #fc7500;
+					 }
+				
+			.p-mobile{
+				display: none;
+			}
+			@media only screen and (max-width:1333px) {
+				#lead-collection-form {
+				width:40%;
+				padding: 2em 1.5em;
+				position: absolute;
+				right:4%;
+				background-color: #000;
+				color: #fff;
+			}
+			#nav-content {
+				width: 40%;
+				margin-left: 2rem;
+			}
+
 			}
 			@media only screen and (max-width:1030px) {
 				header {
@@ -455,20 +497,12 @@
 					width: auto
 				}
 
-				#nav-content {
-					width: 50%;
-					color: #fff
-				}
 
 				#logo amp-img {
 					max-width: 90%
 				}
 
-				#lead-collection-form {
-					width: 45%;
-
-				}
-
+			
 				#nav-divider {
 					height: 400px
 				}
@@ -496,7 +530,7 @@
 				#logo a {
 					width: auto
 				}
-
+			
 				#nav-wrapper {
 					flex-direction: column;
 					text-align: center;
@@ -505,12 +539,15 @@
 
 				#lead-collection-form,
 				#nav-content {
-					width: 100%
+					width: 100%;
+					right: 0%;
+					margin-left: 0rem;
 				}
 
 				#lead-collection-form {
 					margin-top: 2em;
-					position: relative
+					position: relative;
+					
 				}
 
 				#nav-divider {
@@ -541,12 +578,13 @@
 
 			@media only screen and (max-width:600px) {
 				#nav-wrapper {
-					padding: 0
-				}
+					padding: 0;
+					margin:0;
+					width: 100%;				}
 
-				h1 {
-					font-size: 1.7em;
-					margin-top: 1em
+				h1 {		
+    font-size: 2em;
+    line-height: 1.33333;
 				}
 
 				h2 {
@@ -557,14 +595,49 @@
 				h3 {
 					font-size: 1.4em
 				}
+				#nav {
+					background-image: none;
+					padding-bottom: 0rem;
+				}
+				#nav-content {
+					width:100%;
+					background-image: url('img/stack-coins-calculator-toy-car-pen-template4.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-attachment:fixed;
+				background-size:cover;
+				padding:2rem 0rem;
+				margin: 0;
+
+				}
+				#nav-content p {
+					display: none;
+				}
+				.click-to-call{
+					display: none;
+				}
+				.p-mobile{
+					display: block;
+    background-color: #43809f;
+    padding: 1.5rem 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.6;
+				}
+
 
 				.click-to-call {
 					font-size: 1.5rem
 				}
 
 				#lead-collection-form {
-					margin-bottom: 2em
+
+						width: 90%;
+    right: -5%;		margin-top: 1rem;
+    margin-bottom: 2em;
 				}
+	
+
 
 				.service-item {
 					flex-direction: column;
@@ -593,7 +666,7 @@
 				.testimonial {
 					width: 100%
 				}
-
+                
 				#footer-content {
 					width: 90%;
 					text-align: center
@@ -615,6 +688,7 @@
 					padding: 18px 30px;
 					font-size: 1.2em;
 					bottom:5rem;
+					display: none;
 				}
 
 				#why-us ul li::marker {
@@ -629,7 +703,7 @@
 				.call-mobile{
 					display: block;
 					text-align: center;
-					position: fixed;
+					position:sticky;
 					bottom: 0;
 				}
 			}
@@ -657,22 +731,23 @@
 		<amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay">
 		</amp-position-observer>
 		<!-- nav section -->
+	
 		<section id="nav" class="target">
-			<header class="flex flex-center" id="top">
+				<header class="flex flex-center" id="top">
 				<div class="flex flex-space-between" id="logo">
 					<div class="img-logo flex">
 					<a class="" href="#">
 						<amp-img
 							alt="Company Logo"
-							src="img/logo-removebg-preview.png"
-							width="160"
-							height="100"
+							src="img/logo1.png"
+							width="150"
+							height="70"
 							layout="intrinsic"
 						></amp-img>
 					</a>
 				</div>
 				<div class="tel flex">
-					<a class="click-to-call" href="tel:+123548674987">+01-123-648-8790</a>
+					<a class="click-to-call" href="tel:+123548674987">123-648-8790</a>
 				</div>
 				</div>
 				<amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay">
@@ -693,6 +768,7 @@
 					action-xhr="/"
 					target="_top"
 					class="flex flex-column flex-center border-round box-shadow">
+					<h3>Get Your Instant Quote</h3>
 					<input type="text" name="name" placeholder="Name" class="animate border-round" required />
 					<input type="email" name="email" placeholder="Email" class="animate border-round" required />
 					<input type="phone" name="phone" placeholder="Phone Number" class="animate border-round" required />
@@ -702,6 +778,11 @@
 						**24/7 Phone Support, No Credit Card Fees, No Amendment Fees.
 					</p>
 				</form>
+				<div>
+					<p class="p-mobile">
+						Welcome to cashforcar . Getting rid of your junk car should be hassle free. At San Diego County Junk Car Removals We promise nothing less than an outstanding price for your truck or car for Junk and high-quality convenient services to match. ItÂ’s easy to get a cash payment for your used, Junk, wrecked, damaged or unwanted car or truck. We provide car removal services in San Diego County regions with top grade cash for car prices!
+					</p>
+				</div>
 			</div>
 		</section>
 <!-- devider -->
